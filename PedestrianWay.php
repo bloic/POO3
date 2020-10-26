@@ -10,7 +10,7 @@ final class PedestrianWay extends HighWay
     }
     public function addVehicle(Vehicle $vehicle)
     {
-        if ($vehicle instanceof Cars ){
+        if ($vehicle instanceof Cars || $vehicle instanceof Truck ){
             $message = 'les voitures ne sont pas autorisé';
         }else{
             $this->currentVehicle[]= $vehicle;
