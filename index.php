@@ -48,10 +48,21 @@ $pedestrianWay = new PedestrianWay();
 $pedestrianWay->addVehicle($bicycle);
 var_dump($pedestrianWay);
 
-$pedestrianWay = new MotorWay();
-$pedestrianWay->addVehicle($car);
-var_dump($pedestrianWay);
+$motorWay = new MotorWay();
+$motorWay->addVehicle($car);
+var_dump($motorWay);
 
-$pedestrianWay = new MotorWay();
-$pedestrianWay->addVehicle($truck);
-var_dump($pedestrianWay);
+$motorWay = new MotorWay();
+$motorWay->addVehicle($truck);
+var_dump($motorWay);
+
+$residentialWay = new ResidentialWay();
+$residentialWay->addVehicle($car);
+var_dump($residentialWay);
+
+$residentialWay = new ResidentialWay();
+$residentialWay->addVehicle($truck);
+
+var_dump($residentialWay);$residentialWay = new ResidentialWay();
+$residentialWay->addVehicle($bicycle);
+var_dump($residentialWay);

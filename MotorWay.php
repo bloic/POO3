@@ -12,7 +12,8 @@ final class MotorWay extends HighWay
 
     public function addVehicle(Vehicle $vehicle)
 
-    {if ($vehicle instanceof Bicycle) {
+    {
+        if ($vehicle instanceof Bicycle) {
              echo $message = 'il n\'est pas possible de rouler à vélo sur l\'autoroute';
         }else{
         $this->currentVehicle[]= $vehicle;

@@ -20,7 +20,7 @@ abstract class HighWay
     protected $maxSpeed;
 
 
-    public function __contruct(int $nbLane, int $maxSpeed)
+    public function __construct(int $nbLane, int $maxSpeed)
     {
         $this->nbLane = $nbLane;
         $this->maxSpeed = $maxSpeed;
